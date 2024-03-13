@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 04</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    body{
+      padding: 1rem;
+    }
+  </style>
+
+  <script defer>
+    const num1 = parseInt(prompt("Usuário, digite um número"))
+    const num2 = parseInt(prompt("Usuário, digite outro número"))
+    const num3 = parseInt(prompt("Usuário, digite um último número"))
+
+    let minor = num1
+
+    if (num1 === num2 && num2 === num3) {
+      alert('Esses valores são iguais! A soma dos três valores é: ' + num1 * 3)
+    }
+    else{
+      if (num2 < num1 && num2 < num3) {
+        minor = num2
+        alert(`A soma dos maiores números, ${num1} e ${num3}, é igual a ${num1 + num2 + num3 - minor}`)
+      }
+
+      if (num3 < num1 && num3 < num2) {
+        minor = num3
+        alert(`A soma dos maiores números, ${num2} e ${num1}, é igual a ${num1 + num2 + num3 - minor}`)
+      }
+
+      else{
+        alert(`A soma dos maiores números, ${num2} e ${num3}, é igual a ${num1 + num2 + num3 - minor}`)
+      }
+    }
+
+  </script>
+</head>
+<body>
+  <p>
+    4. Faça um programa que leia 3 valores informados pelo usuário (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores.
+  </p>
+</body>
+</html>
