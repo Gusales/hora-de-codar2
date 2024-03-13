@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 05</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    body{
+      padding: 1rem;
+    }
+  </style>
+
+  <script defer>
+    const num1 = parseInt(prompt("Usuário, digite a primeira nota"))
+    const num2 = parseInt(prompt("Usuário, digite a segunda nota"))
+    const num3 = parseInt(prompt("Usuário, digite a terceira nota"))
+    const num4 = parseInt(prompt("Usuário, digite a quarta nota"))
+    const num5 = parseInt(prompt("Usuário, digite a quinta nota"))
+    const num6 = parseInt(prompt("Usuário, digite a sexta nota"))
+
+    if (isNaN(num1) || isNaN(num2) || isNaN(num3) || isNaN(num4) || isNaN(num5) || isNaN(num6)) {
+      alert('Usuário, você digitou uma letra ao invés de um número')
+    }
+    else {
+      const response = (num1 + num2 + num3 + num4 + num5 + num6) / 6
+      alert(`A média aritmética de ${num1}, ${num2}, ${num3}, ${num4}, ${num5}, ${num6} é igual a ${response}`)
+    }
+    
+
+  </script>
+</head>
+<body>
+  <p>
+    5.  Faça um programa que leia 6 valores informados pelo usuário, calcule, exiba os números informados e escreva a média aritmética desses valores lidos.
+  </p>
+</body>
+</html>
