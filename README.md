@@ -14,7 +14,18 @@ Escreva um programa em que o usuário informe dois números utilizando o "prompt
 
 ## Exercício 02
 Faça um programa que leia um valor informado pelo usuário e diga se o valor informado é positivo, negativo ou zero.
-<a href="./tasks/task02.html">Resolução</a><br />
+<br />
+<a href="./tasks/task02.html">Resolução</a> <br />
 ![Print do exercício concluído](./.github/ex02.png)
+
+<hr />
+
+<hr />
+
+## Exercício 03
+Faça um programa para ler 3 valores (considere que não serão informados valores iguais) e escrever o maior deles.
+<br />
+<a href="./tasks/task03.html">Resolução</a> <br />
+![Print do exercício concluído](./.github/ex03.png)
 
 <hr />
