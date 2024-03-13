@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 01</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    body{
+      padding: 1rem;
+    }
+  </style>
+
+  <script defer>
+    const num1 = parseInt(prompt("Usuário, digite um número"))
+    const num2 = parseInt(prompt("Usuário, digite outro número"))
+
+    if (num1 > num2) {
+      alert(`${num1} é maior que ${num2}!`)
+    }
+    else if (num1 < num2) {
+      alert(`${num2} é maior que ${num1}!`)
+    }
+    else{
+      alert('Esses números são iguais!')
+    }
+
+  </script>
+</head>
+<body>
+  <p>
+    1. Escreva um programa em que o usuário informe dois números utilizando o "prompt". Então escreva em tela o maior deles
+  </p>
+</body>
+</html>
