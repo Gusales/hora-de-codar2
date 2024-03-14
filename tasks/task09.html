@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 08</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    body{
+      padding: 1rem;
+    }
+  </style>
+
+  <script defer>
+    let userYearOfBirth = prompt("Usuário, digite o ano em que você nasceu")
+
+    if (isNaN(parseInt(userYearOfBirth)) || userYearOfBirth.length !== 4) {
+      alert('Usuário, você não digitou um ano válido!')
+    }
+
+    else {
+      userYearOfBirth = parseInt(userYearOfBirth)
+  
+      const nowDate = new Date().getFullYear()
+  
+      const calculateAge = nowDate - userYearOfBirth
+  
+      if (calculateAge >= 18) {
+        alert('Usuário, a partir desse ano, você é obrigado a votar!')
+      }
+  
+      else if (calculateAge >= 16 && calculateAge < 18) {
+        alert('Usuário, você pode votar, mas não é obrigado!')
+      }
+  
+      else{
+        alert('Usuário, você ainda não pode votar!')
+      }
+    }
+
+    
+  </script>
+</head>
+<body>
+  <p>
+    9. Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que ela nasceu).
+  </p>
+</body>
+</html>
