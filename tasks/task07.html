@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 07</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    body{
+      padding: 1rem;
+    }
+  </style>
+
+  <script defer>
+    let sum = 0;
+    for (let index = 0; index < 6; index++) {
+      const num = parseInt(prompt("Usuário, digite um número"))
+
+      if (isNaN(num)) {
+        alert("Usuário, você digitou uma letra ao invés de um número!")
+      }
+
+      if (num < 72) {
+        sum += num
+      }
+    }
+
+    alert(`A soma dos números digitados (manores que 72) foi: ${sum}`)
+  </script>
+</head>
+<body>
+  <p>
+    7. Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor inferior a 72 devem ser somados. Escreva o valor final da soma efetuada e também todos valores que o usuário informou.  
+  </p>
+</body>
+</html>
