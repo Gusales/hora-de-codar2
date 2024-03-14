@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 08</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    body{
+      padding: 1rem;
+    }
+  </style>
+
+  <script defer>
+    const note1 = parseInt(prompt("Usuário, digite sua primeira nota"))
+    const note2 = parseInt(prompt("Usuário, digite sua segunda nota"))
+    const note3 = parseInt(prompt("Usuário, digite sua terceira nota"))
+    const note4 = parseInt(prompt("Usuário, digite sua quarta nota"))
+
+    let calc = 0;
+
+    if (isNaN(note1) || isNaN(note2) || isNaN(note3) || isNaN(note4)) {
+      alert('Usuário, você digitou uma letra no lugar de uma nota!')
+    }
+
+    if (0 > note1 < 10) {
+      calc += note1
+    }
+
+    if (0 > note2 < 10) {
+      calc += note1
+    }
+
+    if (0 > note3 < 10) {
+      calc += note1
+    }
+
+    if (0 > note4 < 10) {
+      calc += note1
+    }
+
+    const media = calc / 4
+    console.log(media)
+
+    if (media > 5) {
+      alert(`Você passou no teste! Sua média final foi: ${media}`)
+    }
+
+    else {
+      alert(`Tente novamente! Sua média final foi: ${media}`)
+    }
+  </script>
+</head>
+<body>
+  <p>
+    8. Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente se esses números forem maiores que 0 e menores que 10. No final, se a média for maior que cinco o usuário receberá uma mensagem "Você passou no teste". Em qualquer outra situação, ele receberá uma mensagem de "tente novamente"
+  </p>
+</body>
+</html>
