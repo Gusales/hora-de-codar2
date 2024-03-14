@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 06</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    body{
+      padding: 1rem;
+    }
+  </style>
+
+  <script defer>
+    const num1 = parseInt(prompt("Usuário, digite a primeira nota"))
+    const num2 = parseInt(prompt("Usuário, digite a segunda nota"))
+    const num3 = parseInt(prompt("Usuário, digite a terceira nota"))
+    const num4 = parseInt(prompt("Usuário, digite a quarta nota"))
+
+    if (isNaN(num1) || isNaN(num2) || isNaN(num3) || isNaN(num4)) {
+      alert('Usuário, você digitou uma letra ao invés de um número')
+    }
+    else if(num1 === num2 && num2 === num3 && num3 === num4){
+      alert('Esses números são iguais!')
+    }
+    else {
+      const major = Math.max(num1, num2, num3, num4) 
+    
+      alert(`O primeiro número digitado é: ${num1}. O último valor digitado foi: ${num4}. O maior valor digitado foi: ${major}`)      
+    }
+    
+
+  </script>
+</head>
+<body>
+  <p>
+    6. Faça um programa que receba quatro valores informados pelo usuário, mas informe somente o primeiro, o último e o maior de todos eles (considere que todos os números informados serão diferentes)
+  </p>
+</body>
+</html>
