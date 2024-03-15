@@ -22,7 +22,6 @@
 
   <script defer>
     const gender = prompt("Usuário, informe seu gênero, sendo 1 para o gênero feminino e 2 para o masculino")
-    console.log(gender)
 
     if (gender === "1" || gender === "2") {
         const height = parseFloat(prompt("Agora, informe a sua altura"))
@@ -33,9 +32,10 @@
                 break;
             case "2":
                 calc = (72.7 * height) - 58
+                break;
         }
     
-        alert(`Seu peso ideal é ${Math.round(calc)}kg`)
+        alert(`${gender === 1 ? 'Usuária,' : 'Usuário,'} seu peso ideal é ${Math.round(calc)}kg`)
     }
     else {
         alert("Você informou um valor errado!")
