@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 11</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    body{
+      padding: 1rem;
+    }
+  </style>
+
+  <script defer>
+    const num1 = parseInt(prompt("Usuário, digite o primeiro valor"))
+    const num2 = parseInt(prompt("Usuário, digite o segundo valor"))
+    if (isNaN(num1) || isNaN(num2)) {
+      alert('Usuário, você digitou uma letra ao invés de um número')
+    }
+    else {
+        const operation = prompt("Escolha a operação que queira fazer: (1 - Adição; 2 - Subtração; 3 - Divisão; 4 - Multiplicação)")
+
+        switch (operation) {
+            case "1":
+                alert(`${num1} + ${num2} = ${num1 + num2}`)
+                break;
+            case "2":
+                alert(`${num1} - ${num2} = ${num1 - num2}`)
+                break;
+            case "3":
+                alert(`${num1} ÷ ${num2} = ${num1 / num2}`)
+                break;
+                case "4":
+                    alert(`${num1} x ${num2} = ${num1 * num2}`)
+                    break;
+            default:
+                alert("Selecione uma operação válida!")
+                break;
+        }
+    }
+  </script>
+</head>
+<body>
+  <p>
+    Escreva um programa para ler dois valores inteiros informados pelo usuário e uma das seguintes operações a serem executadas (codificadas da seguinte forma: 1. Adição; 2. Subtração; 3. Divisão; 4. Multiplicação)
+  </p>
+
+<ul>
+    <li>Para homens: (72,2 x altura) - 58</li>
+    <li>Para mulheres: (62,1 x altura) - 44,7</li>
+</ul>
+</body>
+</html>

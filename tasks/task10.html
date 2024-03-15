@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 10</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    body{
+      padding: 1rem;
+    }
+  </style>
+
+  <script defer>
+    const gender = prompt("Usuário, informe seu gênero, sendo 1 para o gênero feminino e 2 para o masculino")
+    console.log(gender)
+
+    if (gender === "1" || gender === "2") {
+        const height = parseFloat(prompt("Agora, informe a sua altura"))
+        let calc = 0
+        switch (gender) {
+            case "1":
+                calc = (61,1 * height) - 44,7
+                break;
+            case "2":
+                calc = (72.7 * height) - 58
+        }
+    
+        alert(`Seu peso ideal é ${Math.round(calc)}kg`)
+    }
+    else {
+        alert("Você informou um valor errado!")
+    }
+  </script>
+</head>
+<body>
+  <p>
+    10. Tendo como entrada a altura e o sexo (codificando da seguinte dorma: 1: Feminino; 2: Masculino) de uma pessoa, construa um programa que calcule e imprima seu peso ideal, utilizando as fórmulas:
+  </p>
+
+<ul>
+    <li>Para homens: (72,2 x altura) - 58</li>
+    <li>Para mulheres: (62,1 x altura) - 44,7</li>
+</ul>
+</body>
+</html>

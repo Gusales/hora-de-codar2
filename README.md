@@ -20,8 +20,6 @@ Faça um programa que leia um valor informado pelo usuário e diga se o valor in
 
 <hr />
 
-<hr />
-
 ## Exercício 03
 Faça um programa para ler 3 valores (considere que não serão informados valores iguais) e escrever o maior deles.
 <br />
