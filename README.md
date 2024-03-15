@@ -101,7 +101,7 @@ Tendo como entrada a altura e o sexo (codificando da seguinte dorma: 1: Feminino
 <hr />
 
 ## Exercício 11
-
+Escreva um programa para ler dois valores inteiros informados pelo usuário e uma das seguintes operações a serem executadas (codificadas da seguinte forma: 1. Adição; 2. Subtração; 3. Divisão; 4. Multiplicação)
 <br />
 <a href="./tasks/task11.html">Resolução</a> <br />
 <img src="./.github/ex11.png" alt="Print do exercício concluído" />
